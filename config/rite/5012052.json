@@ -1,0 +1,141 @@
+ {
+        "id": 5012052,
+        "name": "仇人的踪迹",
+        "text": "在各种怪力乱神的流言蜚语中，一则消息引起了你的注意——有人在郊外看见了一队身着灰色罩袍的流民。为了查清小阿卜德的去向，你决定派盟友去调查此事。",       
+        "tips": "",
+        "mapping_id":8000135,
+        "once_new":0,
+        "round_number": 1,
+        "waiting_round":0,
+        "waiting_round_end_action":[
+        ],        
+        "method_settlement": "",
+        "auto_begin": 0,
+        "auto_result": 0,
+        "location": "野外:[10,15]", 
+        "icon": "rite_17", 
+        "tag_tips": [
+        ],
+        "tag_tips_up":{
+            "tips":["战斗","体魄"],
+            "type":"normal_result"
+        },
+        "tips_text":[
+            "你需要指派一名追随者进行调查。"
+        ],
+        "open_conditions": [
+        ],
+        "random_text":{
+        },
+        "random_text_up":{
+            "r1":{
+                "text":"他们看来不太想杀人",
+                "type":"normal_result",
+                "type_tips":"你的骰子数由战斗和体魄提供。",
+                "low_target": 1,
+                "low_target_tips": "你至少需要1点成功。"
+            }
+           
+        },
+        "settlement_prior": [
+        ],                
+        "settlement": [
+        ],               
+        "settlement_extre": [
+            {
+                "condition": {
+                    "any":{
+                    "r1:s1.战斗+s2.战斗+s3.战斗+s1.战斗+s2.战斗+s3.战斗>=":[1,5],
+                    "s1.主角":1
+                    }
+                },
+                "result_title":"越反抗，越有鬼",
+                "result_text": "当[s1.name]走进流民的临时营地时，喧闹的人声瞬间止息，所有眼睛齐刷刷看向[s1.gender]。安静了不到一秒，便掏出家伙嗷嗷叫地扑了上来。\n他们气势虽凶，但充其量不过一帮乌合之众，[s1.name]三下五除二便把他们收拾利索了。遗憾的是，营地中并没有小阿卜德的踪迹。\n意外收获是，你因为意外逮捕了赫赫有名，未尝胜迹的天下第一蠢贼——幻影团队，受到治安官的热烈嘉奖。\n你十分谦虚，只收下赏钱，公开表扬还是算了吧。",
+                "result": 
+                {  
+                    "s1+战斗":1,
+                    "s1+体魄":1,
+                    "coin":10
+                },
+                "action": {
+                    "counter+9000056":1
+  
+                }
+            },
+            {
+                "condition": {
+                    "r1:s1.战斗+s2.战斗+s3.战斗+s1.战斗+s2.战斗+s3.战斗<":[1,5]
+                },
+                "result_title":"误入贼窝",
+                "result_text": "[s1.name]没想通的是，明明只是来打探个情报，为啥这帮人不分青红皂白就揍了自己一顿，还尽瞄着下三路拳打脚踢……当[s1.name]眼泪汪汪向你汇报时，你想了好多伤心事才不至于笑出来。",
+                "result": 
+                {
+                    "s1+战斗":1
+                },
+                "action": {
+                    "counter+9000056":1
+
+                }
+            },
+            {
+                "condition": {
+                    "all":{
+                       "r1:s1.战斗+s2.战斗+s3.战斗+s1.战斗+s2.战斗+s3.战斗>=":[1,5],
+                       "s3":1
+                    }
+                },
+                "result_title":"怎么不算呢？",
+                "result_text": "这帮笨贼名声在外。上一次，他们挖塌了钱庄的外墙，竟把自己给活埋在下面，好在弄出的动静够大，吸引了职员的注意，这才捡了一条小命。\n……你陈词的声音越来越小，但苏丹的笑声越来越放肆，你征服了苏丹的笑点，如此“功绩”，自然配得上一张征服卡。",
+                "result": 
+                {    
+                    "clean.s3":1,
+                    "s1+战斗":1
+                },
+                "action": {
+
+                }
+            }
+        ],
+        "cards_slot":
+        {
+            "s1":
+            {
+                "condition": 
+                {
+                    "type":"char"
+                },
+                "open_adsorb":0,
+                "is_key":0,
+                "is_empty":0,
+                "is_enemy":0, 
+                "text":"你可以指派任何人去处理此事" 
+            },
+            "s2":
+                {
+                    "condition": 
+                    {
+                        "type":"item",
+                        "消耗品":1
+                    },
+                    "open_adsorb":0,
+                    "is_key":0,
+                    "is_empty":1,
+                    "is_enemy":0,
+                    "text":"消耗品可以提升调查的成功率"
+                },
+            "s3":
+                {
+                    "condition": 
+                    {
+                        "type":"sudan",
+                        "征服":1,
+                        "rare<=":2
+                    },
+                    "open_adsorb":0,
+                    "is_key":0,
+                    "is_empty":1,
+                    "is_enemy":0,
+                    "text":"一张不高于青铜品级的征服卡"
+                }
+        }
+    } 

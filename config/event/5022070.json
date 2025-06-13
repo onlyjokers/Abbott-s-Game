@@ -1,0 +1,25 @@
+{
+    "id": 5022070,
+    "text": "芮尔可以出狱的通知",
+    "is_replay": 0,
+    "auto_start":false,
+    "start_trigger":false,
+    "on": { 
+        "round_begin_ba":14
+    },
+    "condition": {
+    },
+    "settlement": [
+        {
+            "action": {
+                "prompt": {
+                    "id": "5022070_01",
+                    "text": "在经历过很长一段时间后，你并没有忘记自己还有一名盟友正在蹲大牢，你想她大概已经冷静下来了，是时候去见一见芮尔了。",
+                    "icon": ["cards/2000771"]
+                },
+                "counter+9000064":1,  //芮尔获准出狱的计数器
+                "event_off":5022070
+            }
+        }
+    ]
+}

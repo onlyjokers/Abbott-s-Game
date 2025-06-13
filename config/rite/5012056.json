@@ -1,0 +1,62 @@
+ {
+        "id": 5012056,
+        "name": "谁是马鲁夫？",
+        "text": "谁是马鲁夫？马鲁夫做了什么？苏丹为什么要你来处理他的事情？",       
+        "tips": "",
+        "mapping_id":8001008,
+        "once_new":0,
+        "round_number": 1,
+        "waiting_round":0,
+        "waiting_round_end_action":[ 
+        ],        
+        "method_settlement": "",
+        "auto_begin": 0, 
+        "auto_result": 0,//需要手动启动
+        "location": "上城区:[3,12]", 
+        "icon": "rite_14", 
+        "tag_tips": [
+        ],
+        "tag_tips_up":{
+        },        
+        "tips_text":[        
+        ],
+        "open_conditions": [
+        ],
+        "random_text":{
+        },
+        "random_text_up":{
+        },
+        "settlement_prior": [
+        ],                
+        "settlement": [            
+        ],               
+        "settlement_extre": [
+            {
+                "condition": {                   
+                },
+                "result_title":"",
+                "result_text": "又一次的，你的线人在城市的各个角落，不约而同地收到你的命令：\n我要马鲁夫的信息，越详细越好！\n终于，在你听过手下的报告后，你终于理清了大概的眉目——\n马鲁夫，这座城市最卑劣的变态，常年经营着一间叫地下丝绒的邀请制会所，以提供残酷的杀人表演闻名于一些特定的圈层。去那里的人，大都有着同样难以启齿的血色幻想，而且非富即贵。表演者大多并非自愿，考虑到与他们的表演生涯同样短暂的寿命，马鲁夫还与奴隶贩子，犯罪团伙保持着密切联系。\n马鲁夫此前靠着贿金一直过得逍遥快活，直到最近，他惹怒了一位没有仰慕之情的粉丝，砸了他的场子，抄了他的家，还誓要将他诛杀。\n他将半辈子攒下的家业尽数进贡给苏丹，换取了苏丹的庇护，这才幸免于难。\n你感到脑袋隐隐作痛，回忆着苏丹的任务，搞定马鲁夫的事情——\n“搞定”的方式有许多种，你觉得这件事可能不会那么难办。",
+                "result": 
+                {  
+                },
+                "action": {
+                    "event_on":5022065  //芮尔来访
+                }
+            }
+        ],
+        "cards_slot":
+        {
+            "s1":
+                {
+                    "condition": 
+                    {
+                        "type": "char"
+                    },
+                    "open_adsorb":0,
+                    "is_key":0,
+                    "is_empty":0,
+                    "is_enemy":0,
+                    "text":"你的一位盟友，为你搜集情报"
+                }
+        }
+    } 

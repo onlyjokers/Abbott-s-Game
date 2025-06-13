@@ -1,0 +1,421 @@
+ {
+        "id": 5012067,
+        "name": "命运档案馆",
+        "text": "你可以向命运神庙的苦修士购买任意黄金品级的情报，该仪式每天刷新。",       
+        "tips": "",
+        "mapping_id":8000514,
+        "once_new":1,
+        "round_number": 1,
+        "waiting_round":0, 
+        "waiting_round_end_action":[
+        ],
+        "method_settlement": "",
+        "auto_begin": 0,
+        "auto_result":0,
+        "location": "野外:[2,12]", 
+        "icon": "rite_9",  
+        "tag_tips": [
+        ],
+        "tag_tips_up":{
+        },
+        "tips_text":[
+            "薇瑞娜兴许可以帮忙购买情报，修邦很乐意见到她。"
+        ],
+        "open_conditions": [
+            {
+                "condition": {
+                    "any":{
+                        "s1":1,
+                        "s2":1,
+                        "s3":1,
+                        "s4":1,
+                        "s5":1,
+                        "s6":1,
+                        "s7":1
+                    }
+                }
+            }
+        ],
+        "random_text": {    
+        },
+        "random_text_up":{
+        },
+        "random_effect": {          
+        },
+        "settlement_prior": [
+        ],                
+        "settlement": [
+        ],                
+        "settlement_extre": [
+//普通购物————————————————————————————————————————————————
+            {
+                "condition": {
+                    "s1.金币":1
+                },
+                "result_title":"你买到了一些有价值的情报",
+                "result_text": "",
+                "result": 
+                {
+                    "card":2000414 //金洞察
+                },
+                "action": {         
+                }
+            },
+            {
+                "condition": {
+                    "s2.金币":1
+                },
+                "result_title":"你买到了一些有价值的情报",
+                "result_text": "",
+                "result": 
+                {
+                    "card":2000415 //金机遇
+                },
+                "action": {         
+                }
+            },
+            {
+                "condition": {
+                    "s3.金币":1
+                },
+                "result_title":"你买到了一些有价值的情报",
+                "result_text": "",
+                "result": 
+                {
+                    "card":2000422 //金秘氛
+                },
+                "action": {         
+                }
+            },
+            {
+                "condition": {
+                    "s4.金币":1
+                },
+                "result_title":"你买到了一些有价值的情报",
+                "result_text": "",
+                "result": 
+                {
+                    "card":2000416 //金内幕
+                },
+                "action": {         
+                }
+            },
+            {
+                "condition": {
+                    "s5.金币":1
+                },
+                "result_title":"你买到了一些有价值的情报",
+                "result_text": "",
+                "result": 
+                {
+                    "card":2000413 //金秘密
+                },
+                "action": {         
+                }
+            },
+            {
+                "condition": {
+                    "s6.金币":1
+                },
+                "result_title":"你买到了一些有价值的情报",
+                "result_text": "",
+                "result": 
+                {
+                    "card":2000418 //金战术
+                },
+                "action": {         
+                }
+            },
+            {
+                "condition": {
+                    "s7.金币":1
+                },
+                "result_title":"你买到了一些有价值的情报",
+                "result_text": "",
+                "result": 
+                {
+                    "card":2000417 //金预兆
+                },
+                "action": {         
+                }
+            },
+            
+//薇瑞娜购物——————————————————————————————————————————————
+            {
+                "condition": {
+                    "s1.薇瑞娜":1
+                },
+                "result_title":"薇瑞娜为你带回了一些情报，她同时向你转达了修邦的口信，让你给她弄些好吃的！",
+                "result_text": "",
+                "result": 
+                {
+                    "card":2000414 //金洞察
+                },
+                "action": {         
+                }
+            },
+            {
+                "condition": {
+                    "s2.薇瑞娜":1
+                },
+                "result_title":"薇瑞娜为你带回了一些情报，她同时向你转达了修邦的口信，让你给她弄些好吃的！",
+                "result_text": "",
+                "result": 
+                {
+                    "card":2000415 //金机遇
+                },
+                "action": {         
+                }
+            },
+            {
+                "condition": {
+                    "s3.薇瑞娜":1
+                },
+                "result_title":"薇瑞娜为你带回了一些情报，她同时向你转达了修邦的口信，让你给她弄些好吃的！",
+                "result_text": "",
+                "result": 
+                {
+                    "card":2000422 //金秘氛
+                },
+                "action": {         
+                }
+            },
+            {
+                "condition": {
+                    "s4.薇瑞娜":1
+                },
+                "result_title":"薇瑞娜为你带回了一些情报，她同时向你转达了修邦的口信，让你给她弄些好吃的！",
+                "result_text": "",
+                "result": 
+                {
+                    "card":2000416 //金内幕
+                },
+                "action": {         
+                }
+            },
+            {
+                "condition": {
+                    "s5.薇瑞娜":1
+                },
+                "result_title":"薇瑞娜为你带回了一些情报，她同时向你转达了修邦的口信，让你给她弄些好吃的！",
+                "result_text": "",
+                "result": 
+                {
+                    "card":2000413 //金秘密
+                },
+                "action": {         
+                }
+            },
+            {
+                "condition": {
+                    "s6.薇瑞娜":1
+                },
+                "result_title":"薇瑞娜为你带回了一些情报，她同时向你转达了修邦的口信，让你给她弄些好吃的！",
+                "result_text": "",
+                "result": 
+                {
+                    "card":2000418 //金战术
+                },
+                "action": {         
+                }
+            },
+            {
+                "condition": {
+                    "s7.薇瑞娜":1
+                },
+                "result_title":"薇瑞娜为你带回了一些情报，她同时向你转达了修邦的口信，让你给她弄些好吃的！",
+                "result_text": "",
+                "result": 
+                {
+                    "card":2000417 //金预兆
+                },
+                "action": {         
+                }
+            },
+//结算————————————————————————————————————————————————————
+            {
+                "condition": {
+                    "any":{
+                        "s1":1,
+                        "s2":1,
+                        "s3":1,
+                        "s4":1,
+                        "s5":1,
+                        "s6":1,
+                        "s7":1
+                    }
+                },
+                "result_title":"",
+                "result_text": "修邦乐呵呵地从你手中接过钱袋子，交给你几页发黄的旧纸张，这些宫廷秘闻对他来说毫无意义。他用你的钱置办了一些书籍，又换取了一些新鲜粮食，他捧着大包小包回到苦修院，孩子们欢呼着一拥而上。如果不出意外的话，他的晚年将饱受幸福的折磨。",
+                "result": 
+                {
+                },
+                "action": { 
+                    "event_on":5022079
+                }
+            }
+        ],
+        "cards_slot":
+        {
+            "s1":
+            {
+                "condition":
+                {
+                    "all":{
+                        "any":{
+                    "type":"item",
+                    "type":"char"
+                        },
+                        "any":{
+                    "cost.金币":5,
+                    "薇瑞娜":1
+                    }
+                    }
+                },
+                "open_adsorb":0,
+                "is_key":0,
+                "is_empty":1,
+                "is_enemy":0,
+                "text":"金洞察，需要支付5金币"
+            },
+            "s2":
+            {
+                "condition":
+                {
+                    "all":{
+                        "any":{
+                    "type":"item",
+                    "type":"char"
+                        },
+                        "any":{
+                    "cost.金币":5,
+                    "薇瑞娜":1
+                    }
+                    }
+                },
+                "open_adsorb":0,
+                "is_key":0,
+                "is_empty":1,
+                "is_enemy":0,
+                "text":"金机遇，需要支付5金币"
+            },
+            "s3":
+            {
+                "condition":
+                {
+                    "all":{
+                        "any":{
+                    "type":"item",
+                    "type":"char"
+                        },
+                        "any":{
+                    "cost.金币":5,
+                    "薇瑞娜":1
+                    }
+                    }
+                },
+                "open_adsorb":0,
+                "is_key":0,
+                "is_empty":1,
+                "is_enemy":0,
+                "text":"金秘氛，需要支付5金币"
+            },
+            "s4":
+            {
+                "condition":
+                {
+                    "all":{
+                        "any":{
+                    "type":"item",
+                    "type":"char"
+                        },
+                        "any":{
+                    "cost.金币":5,
+                    "薇瑞娜":1
+                    }
+                    }
+                },
+                "open_adsorb":0,
+                "is_key":0,
+                "is_empty":1,
+                "is_enemy":0,
+                "text":"金内幕，需要支付5金币"
+            },
+            "s5":
+            {
+                "condition":
+                {
+                    "all":{
+                        "any":{
+                    "type":"item",
+                    "type":"char"
+                        },
+                        "any":{
+                    "cost.金币":5,
+                    "薇瑞娜":1
+                    }
+                    }
+                },
+                "open_adsorb":0,
+                "is_key":0,
+                "is_empty":1,
+                "is_enemy":0,
+                "text":"金秘密，需要支付5金币"
+            },
+            "s6":
+            {
+                "condition":
+                {
+                    "all":{
+                        "any":{
+                    "type":"item",
+                    "type":"char"
+                        },
+                        "any":{
+                    "cost.金币":5,
+                    "薇瑞娜":1
+                    }
+                    }
+                },
+                "open_adsorb":0,
+                "is_key":0,
+                "is_empty":1,
+                "is_enemy":0,
+                "text":"金战术，需要支付5金币"
+            },
+            "s7":
+            {
+                "condition":
+                {
+                    "all":{
+                        "any":{
+                    "type":"item",
+                    "type":"char"
+                        },
+                        "any":{
+                    "cost.金币":5,
+                    "薇瑞娜":1
+                    }
+                    }
+                },
+                "open_adsorb":0,
+                "is_key":0,
+                "is_empty":1,
+                "is_enemy":0,
+                "text":"金预兆，需要支付5金币"
+            },
+            "s8":
+            {
+                "condition":
+                {
+                    "type":"char",
+                    "is":2100029
+                },
+                "open_adsorb":1,
+                "is_key":0,
+                "is_empty":0,
+                "is_enemy":0,
+                "text":"苦修士"
+            }
+        }
+    } 

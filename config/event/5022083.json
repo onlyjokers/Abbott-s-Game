@@ -1,0 +1,25 @@
+{
+    "id": 5022083,
+    "text": "驱魔专家前置",
+    "is_replay": 0,
+    "auto_start":false,
+    "start_trigger":false,
+    "on": { 
+        "round_begin_ba":1
+    },
+    "condition": {
+    },
+    "settlement": [
+        {
+            "action": {
+                "rite":5012042,  //驱魔专家
+                "prompt": {
+                    "id": "5022083_01",
+                    "text": "你准备去找伊曼聊聊，或者拜铃耶，但不能既找伊曼，又找拜铃耶，那样就太不专业了。",
+                    "icon": ["cards/2000001"]
+                },
+                "event_off":5022083
+            }
+        }
+    ]
+}

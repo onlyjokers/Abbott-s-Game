@@ -1,0 +1,64 @@
+ {
+        "id": 5012047,
+        "name": "不彻底的征服",
+        "text": "你不久前的征服引发了群臣的恐惧，生怕自己也会成为你的下一个受害者。苏丹本人不甚在意，但你的仇敌令他好奇，你必须亲自觐见苏丹，以满足他对猎奇的需要。",       
+        "tips": "",
+        "mapping_id":8001524,
+        "once_new":1,
+        "round_number": 1,
+        "waiting_round":3,
+        "waiting_round_end_action":[
+
+        ],        
+        "method_settlement": "",
+        "auto_begin": 0,
+        "auto_result": 0,
+        "location": "宫廷:[7,10]", 
+        "icon": "rite_14", 
+        "tag_tips": [  
+        ],
+        "tag_tips_up":{
+        },
+        "tips_text":[
+        ],
+        "open_conditions": [
+        ],
+        "random_text":{
+        },
+        "random_text_up":{  
+        },
+        "settlement_prior": [
+        ],                
+        "settlement": [
+        ],               
+        "settlement_extre": [
+            {
+                "condition": {
+                },
+                "result_title":"苏丹要求你从实说来",
+                "result_text": "你讲述了每一个征服的细节，根本犯不着添油加醋。在讲到你们如何击败亡灵法师和尸潮时，就连苏丹也啧啧称奇。\n“没想到啊，阿卜德这条老狗还有点能耐，他瞒着我做的事可不少啊，奴隶贸易，死灵法术，还有他的儿子……”苏丹舒服地靠在他的王座上，戏谑地问你，\n“[player.name]，听说你并没有抓住他的子嗣，此事当真？”\n你回答说是的。\n“但是你也没有留下一个活口，这事也是真的？”\n是的。\n苏丹阴收敛了笑容，几乎要把你看穿，\n“[player.name]？”\n我在，陛下。\n“你在骗我。”\n一道冰冷的闪电击中了你，你赶紧匍匐在地，向苏丹请罪。\n“我允许你折断这张征服卡，不是因为配得上，而是因为我允许！但你欺骗了我。不彻底的复仇和不彻底的征服一样可鄙，你要么完成它，把阿卜德的崽子带给我，要么把那个女孩交给我。现在，你走吧。”\n苏丹冷冷地总结道，结束了朝见。",
+                "result": 
+                {
+                },
+                "action": {
+                    "rite":5012036 //镇定之血
+                }
+            }
+        ],
+        "cards_slot":
+        {
+            "s1":
+                {
+                    "condition": 
+                    {
+                        "type":"char",
+                        "主角": 1
+                    },
+                    "open_adsorb":0,
+                    "is_key":0,
+                    "is_empty":0,
+                    "is_enemy":0, 
+                    "text":"苏丹要求你亲自到场"
+                }
+    }
+    } 

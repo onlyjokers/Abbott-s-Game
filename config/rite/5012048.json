@@ -1,0 +1,110 @@
+ {
+        "id": 5012048,
+        "name": "在选择的尽头",
+        "text": "薇瑞娜为你解释了这个配饰的用途，它被视为一种慰藉，在必要时可以动摇命运之轮的运作。也就是说……可以帮你掌控命运！",       
+        "tips": "",
+        "once_new":0,
+        "round_number": 1,
+        "waiting_round":1,
+        "waiting_round_end_action":[
+        ],        
+        "method_settlement": "",
+        "auto_begin": 0,
+        "auto_result": 0,
+        "location": "神殿区:[2,10]", 
+        "icon": "rite_9", 
+        "tag_tips": [
+        ],
+        "tag_tips_up":{
+        },
+        "tips_text":[
+            "你可以用命运轮盘冻结一张任意品级的苏丹卡。",
+            "你可以选择任意时机执行这个仪式。"
+        ],
+        "open_conditions": [
+        ],
+        "random_text":{
+        },
+        "random_text_up":{  
+        },
+        "settlement_prior": [
+        ],                
+        "settlement": [
+            {
+                "condition": {
+                },
+                "result_title":"这怎么不算逆天改命？",
+                "result_text": "伴随着薇瑞娜用清亮的声音念出护符上的词语，一种前所未有的压力在房间中汇集，凝聚……时间在你的感知中，如同被压紧的弹簧一样变得异常缓慢，随后瞬间释放，云层疯狂流动，行人往来如梭。\n苏丹卡中蕴含的魔力尖叫着，嗡鸣着，发出令人揪心挠肺的痛苦哀嚎，它散发出黑色的弧光，试图挣扎破茧，穿透命运轮盘赋予它的束缚。\n在你们的注视中，随着一个细微的响声，轮盘碎裂了，苏丹卡也陷入沉寂。你能感受到它被某种力量封存起来，就像凝固在琥珀中的虫豸，苦苦哀求着你的释放。",
+                "result": 
+                {    
+                    "s1+冻结":1,
+                    "clean.s2":1
+                },
+                "action": { 
+                }
+            }
+        ],               
+        "settlement_extre": [
+        ],
+        "cards_slot":
+        {
+            "s1":
+                {
+                    "condition": 
+                    {
+                        "type":"sudan"
+                    },
+                    "open_adsorb":0,
+                    "is_key":0,
+                    "is_empty":0,
+                    "is_enemy":0, 
+                    "text":"苏丹卡",                   
+                    "pops":[
+                        {
+                            "condition":{
+                            },
+                            "action":{
+                                "pop.5012048_s1_01.self":"<i>（不确定的魔力涌现）</i>"
+                            }
+                        }
+                    ] 
+                    
+                },
+                "s2":
+                {
+                    "condition": 
+                    {
+                        "type":"item",
+                        "is":2100020
+                    },
+                    "open_adsorb":1,
+                    "is_key":0,
+                    "is_empty":0,
+                    "is_enemy":0, 
+                    "text":"命运轮盘"
+                },
+                "s3":
+                {
+                    "condition": 
+                    {
+                        "type":"char",
+                        "薇瑞娜":1
+                    },
+                    "open_adsorb":0,
+                    "is_key":0,
+                    "is_empty":0,
+                    "is_enemy":0, 
+                    "text":"薇瑞娜知道使用它的方法",                   
+                    "pops":[
+                        {
+                            "condition":{
+                            },
+                            "action":{
+                                "pop.5012048_s3_01.self":"……这是？"
+                            }
+                        }
+                    ] 
+                    
+                }
+        }
+    } 

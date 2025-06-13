@@ -1,0 +1,149 @@
+{
+        "id": 5012040,
+        "name": "最后的代价",
+        "text": "“你不是很擅长取悦你的主人吗？我只是在帮你一个忙而已，帮你完成你想要的复仇，同时满足一下我的好奇心，”苏丹的笑容中丝毫看不出开心，“把那个小崽子交出来，这不是要求，而是命令。”",       
+        "tips": "",
+        "mapping_id":8001008,
+        "once_new":1,
+        "round_number": 1,
+        "waiting_round":0,
+        "waiting_round_end_action":[
+        ],
+        "method_settlement": "",
+        "auto_begin": 1,
+        "auto_result":0,
+        "location": "宫廷:[2,6]", 
+        "icon": "rite_14", 
+        "tag_tips": [
+        ],
+        "tag_tips_up":{
+        },
+        "tips_text":[
+            "将小阿卜德交给苏丹。",
+            "每回合会扣除一张苏丹的耐心。",
+            "小阿卜德还有未了的心愿，他还需要一些时间。"
+        ],
+        "open_conditions": [
+        ],
+        "random_text": {        
+        },
+        "random_text_up":{
+        },
+        "random_effect": {          
+        },
+        "settlement_prior": [
+            {
+                "condition": {  
+                    "s1":1
+                },
+                "result_title":"你将小阿卜德交给了苏丹",
+			    "result_text": "直到你的马车从宫殿回来，薇瑞娜都还在家中翻箱倒柜，寻找阿莫的身影。你实在不忍心告诉薇瑞娜，她的阿莫已经被苏丹处决。但你总感觉，在与小阿卜德分开的时候，他的眼中流露出深深的忧虑，他还有话没告诉你，但那究竟是什么呢？",
+                "result": 
+                {
+                    "clean.s1":1,
+                    "loot":6000049, //给1个随机金情报
+                    "clean.s2":5
+                },
+                "action": {
+                }
+            },
+            {
+                "condition": {
+                    "耐心=":2
+                },
+                "result_title":"",
+                "result_text": "",
+                "result": 
+                {
+                },
+                "action": {
+                    "event_on":5022076
+                }
+            },
+        ],                
+        "settlement": [
+            {
+                "condition": {
+                    "s2":1
+                },
+                "result_title":"",
+                "result_text": "苏丹的耐心在消耗！\n……小阿卜德从到你家开始就没有消停过，一直在你的书房写写画画，但他暂时拒绝与你分享。都什么时候了，他还能鼓捣出什么幺蛾子？",
+                "result": 
+                {
+                    "clean.s2":1
+                },
+                "action": {
+                }
+            },
+            {
+                "condition": {
+                    "!s2":1
+                },
+                "result_title":"",
+                "result_text": "你的傲慢彻底惹怒了苏丹",
+                "result": 
+                {
+                },
+                "action": {
+                }
+            }
+        ],                
+        "settlement_extre": [
+            {
+                "condition": {
+                    "耐心<=":0
+                },
+                "result_title":"",
+                "result_text": "你被处死了",
+                "result": 
+                {
+                },
+                "action": {
+                    "over":1
+                }
+            },
+            {
+                "condition": {
+                    "耐心>":0
+                },
+                "result_title":"",
+                "result_text": "今天已被你蒙混过去，但苏丹的耐心已经不多了",
+                "result": 
+                {
+                },
+                "action": {
+                    "rite":5012040
+                }
+            }
+        ],
+        "cards_slot":
+        {
+            "s1":
+            {
+                "condition":
+                {
+                    "type":"char",
+                    "is": 2100000         
+                },
+                "open_adsorb":0,
+                "is_key":0,
+                "is_empty":1,
+                "is_enemy":0,
+                "text":"小阿卜德"
+            },
+            "s2":
+            {
+                "condition":
+                {
+                    "type":"item",
+                    "is":2000170,
+                    "cost.耐心": [1,5]         
+                },
+                "open_adsorb":1,
+                "is_key":0,
+                "is_empty":1,
+                "is_enemy":0,
+                "text":"苏丹的耐心"
+            }
+        }
+    }

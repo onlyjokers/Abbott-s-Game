@@ -1,0 +1,21 @@
+{
+    "id": 5022079,
+    "text": "命运档案馆刷新",
+    "is_replay": 1,
+    "auto_start":false,
+    "start_trigger":true,
+    "on": {
+        "round_begin_ba":1 
+    },
+    "condition": {
+        "counter.9000067>=":1  //完成了修邦的感谢
+    },
+    "settlement": [
+        {
+            "action": {
+                "rite":5012067,  //开启命运档案馆
+                "event_off": 5022079
+            }
+        }
+    ]
+}

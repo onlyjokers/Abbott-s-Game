@@ -1,0 +1,149 @@
+ {
+        "id": 5012059,
+        "name": "沉默的羔羊",
+        "text": "你自以为天衣无缝的暗杀计划败露了，苏丹要求你交出一位足够重要的人来提醒你的过失，为你的大不敬承担后果。你必须交出你的一位盟友，以期断尾求生。",       
+        "tips": "",
+        "mapping_id":8001008,
+        "once_new":1,
+        "round_number": 1,
+        "waiting_round":0,
+        "waiting_round_end_action":[
+        ],
+        "method_settlement": "",
+        "auto_begin": 1,
+        "auto_result":0,
+        "location": "宫廷:[2,6]", 
+        "icon": "rite_14", 
+        "tag_tips": [
+        ],
+        "tag_tips_up":{
+        },
+        "tips_text":[
+            "在3回合内上交你的一位盟友，否则被处死。",
+            "每回合会消耗一张苏丹的耐心，当苏丹的耐心为0时，游戏就会结束。"
+        ],
+        "open_conditions": [
+        ],
+        "random_text": {        
+        },
+        "random_text_up":{
+        },
+        "random_effect": {          
+        },
+        "settlement_prior": [
+            {
+                "condition": {  //你上交了一名妻妾
+                    "s1":1
+                },
+                "result_title":"正不胜邪",
+                "result_text": "[s1.name]嚎啕大哭，甚至没来得及与你好好道别，便被苏丹的卫兵拖走了。苏丹从来不缺乏残酷的创意，你被恐惧、羞愧、后悔、愤怒、悲伤、绝望所笼罩，邪恶的幻影污染了你的心灵，蚕食着你曾经构想的宏伟愿景——当[s1.name]被带走时，那些光明的许诺，如今又在何处？\n在苏丹的授意下，地下丝绒重新开张了，乌泱泱的食尸鬼齐聚一堂，人满为患，在欢快诙谐的音乐中，在聚光灯下，你的亲人，作为首秀的表演者被押上舞台……\n每奸淫一次，乐师便会敲响一段急促的鼓点；每掏出一样新的工具，人群中便会爆发出热烈的欢呼；每每有一个器官离开[s1.name]的身体，主持人便会当即开始一场拍卖……\n到最后，马鲁夫的合伙人收藏了[s1.name]血色尽失的头颅，你的亲人灵魂破碎，肉体也被帝国的黑暗所吞噬。\n现在，你可以理解芮尔的仇恨了吗？",
+                "result": 
+                {
+                    "clean.s2":3,
+                    "clean.s1":1,
+                    "clean.s3":1
+                },
+                "action": {
+                }
+            }
+        ],                
+        "settlement": [
+            {
+                "condition": {
+                    "s2":1
+                },
+                "result_title":"",
+                "result_text": "苏丹的耐心在消解。",
+                "result": 
+                {
+                    "clean.s2":1
+                },
+                "action": {
+                }
+            },
+            {
+                "condition": {
+                    "!s2":1
+                },
+                "result_title":"",
+                "result_text": "苏丹不认为你有选择的余地。",
+                "result": 
+                {
+                },
+                "action": {
+                }
+            }
+        ],
+        "settlement_extre": [
+            {
+                "condition": {  //额外结果1：耐心为0的情况
+                    "耐心<=":0
+                },
+                "result_title":"",
+                "result_text": "你违抗了苏丹的命令，又一次！",
+                "result": 
+                {
+
+                },
+                "action": {
+                    "over":1
+                }
+            },
+            {
+                "condition": {  //额外结果2：还有耐心的情况
+                    "耐心>":0
+                },
+                "result_title":"",
+                "result_text": "苏丹的耐心已经不多了",
+                "result": 
+                {
+                },
+                "action": {
+                    "rite":5012059 //继续回到这个仪式
+                }
+            }
+        ],
+        "cards_slot":
+        {
+            "s1":
+            {
+                "condition":
+                {
+                    "type":"char",
+                        "追随者":1
+                },
+                "open_adsorb":0,
+                "is_key":0,
+                "is_empty":1,
+                "is_enemy":0,
+                "text":"让你的一位盟友去替你受罚"
+            },
+            "s2":
+            {
+                "condition":
+                {
+                    "type":"item",
+                    "is":2000170,
+                    "cost.耐心": [1,3]
+                },
+                "open_adsorb":1,
+                "is_key":0,
+                "is_empty":1,
+                "is_enemy":0,
+                "text":"苏丹的耐心"
+            },
+            "s3":
+            {
+                "condition":
+                {
+                    "type":"item",
+                    "is":2100025
+                },
+                "open_adsorb":1,
+                "is_key":0,
+                "is_empty":1,
+                "is_enemy":0,
+                "text":"马鲁夫的罪证"
+            }
+        }
+    }

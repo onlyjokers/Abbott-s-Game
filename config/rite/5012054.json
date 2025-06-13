@@ -1,0 +1,123 @@
+ {
+        "id": 5012054,
+        "name": "仇人的踪迹",
+        "text": "在各种怪力乱神的流言蜚语中，一则消息引起了你的注意——一个人声称自己拥有一枚印有阿卜德家徽的信笺，甚至没有拆封。为了查清小阿卜德的隐秘，你决定去与此人交易。",       
+        "tips": "",
+        "mapping_id":8000051,
+        "once_new":0,
+        "round_number": 1,
+        "waiting_round":0,
+        "waiting_round_end_action":[
+        ],        
+        "method_settlement": "",
+        "auto_begin": 0,
+        "auto_result": 0,
+        "location": "宫廷:[5,11]", 
+        "icon": "rite_17", 
+        "tag_tips": [
+        ],
+        "tag_tips_up":{
+        },
+        "tips_text":[
+        ],
+        "open_conditions": [
+        ],
+        "random_text":{
+        },
+        "random_text_up":{        
+        },
+        "settlement_prior": [
+        ],                
+        "settlement": [
+        ],               
+        "settlement_extre": [
+            {
+                "condition": {
+                },
+                "result_title":"狮子大开口",
+                "result_text": "你被对方的报价惊呆了，张口便要你20枚金币。他称，这封信是前宰相东窗事发前送出的，原定着秘密送出，但信使不幸罹难，而劫匪目不识丁，这才使它流入黑市。有个神神秘秘的贵族与他定好了交易，但苏丹抢先一步将他处死，这才便宜了你。这个精明的男人说：“我和他定好了是20金币，所以你也得出20金币。”",
+                "result": 
+                {  
+                },
+                "action": {
+
+                }
+            },
+            {
+                "condition": {
+                    "!s3":1
+                },
+                "result_title":"砍价高手",
+                "result_text": "你才不信他的鬼话，没人读过这封信，里面是什么内容都有可能……但也正因为它没被读过，才使它不至于废纸一张。\n你给出了你心目中的报价——1金币，否则就禀告上面，有人窝藏罪证。\n对方脸色煞白：“我相信大人是个体面人，不会败坏自己名声，但我也有成本，10金币！”\n你的成本就是去翻翻垃圾桶，3金币。\n“算了算了，再争下去也没有意义，8金币！”\n5金币，不能再多了。\n你们完成了这笔交易。",
+                "result": 
+                {
+                    "card":[2100023,"已拥有+1"],  //获得二手信件
+                    "s1+社交":2
+                },
+                "action": {
+                    "counter+9000056":1
+                }
+            },
+            {
+                "condition": {
+                    "all":{
+                        "s2.金币=":10,
+                        "s3":1
+                    }
+                },
+                "result_title":"便宜没好货",
+                "result_text": "用如此巨款来买一封二手信件，这绝对称得上是一件奢靡之举，也有可能被误解为粉丝行为，现在就连苏丹也开始好奇信的内容了。\n但你也不能让人白白宰一刀，在提出10金币的报价时，对方摆出一幅痛苦的表情，在你还没反应过来时便敲定了交易。\n自己是不是当了冤大头了？",
+                "result": 
+                {    
+                    "clean.s3":1,
+                    "card":[2100023,"已拥有+1"],  //获得二手信件
+                    "counter+7100003":3 //权势+3
+                },
+                "action": {
+                    "counter+9000056":1
+                }
+            }
+        ],
+        "cards_slot":
+        {
+            "s1":
+            {
+                "condition": 
+                {
+                    "type":"char"
+                },
+                "open_adsorb":0,
+                "is_key":0,
+                "is_empty":0,
+                "is_enemy":0, 
+                "text":"你可以指派任何人去处理此事" 
+            },
+            "s2":
+                {
+                    "condition": 
+                    {
+                        "type":"item",
+                        "cost.金币":[5,10]
+                    },
+                    "open_adsorb":0,
+                    "is_key":0,
+                    "is_empty":0,
+                    "is_enemy":0,
+                    "text":"若使用奢靡卡则需要10金币"
+                },
+            "s3":
+                {
+                    "condition": 
+                    {
+                        "type":"sudan",
+                        "奢靡":1,
+                        "rare<=":2
+                    },
+                    "open_adsorb":0,
+                    "is_key":0,
+                    "is_empty":1,
+                    "is_enemy":0,
+                    "text":"一张不高于青铜品级的奢靡卡"
+                }
+        }
+    } 

@@ -1,0 +1,29 @@
+{
+    "id": 5022051,
+    "text": "阿穆尔声望事件激活提示",     
+    "is_replay": 1, //是否可以重复触发
+    "auto_start_init": [1],
+    "start_trigger": false, // 是否启动就立即开始校验条件
+    "on":{   //时机
+        "round_begin_ba": 1
+    },
+    "condition":{  //条件
+        "hand_have.2000164":1, //阿穆尔在手牌
+            "all":{
+                "counter.9000051<":1, //本体没有触发过
+                "counter.9000050>=":1 //在有罪之人中被解救了
+            }
+    },
+    "settlement": [    //效果 
+        {
+            "tips_resource":"", 
+            "tips_text":"",
+            "action":{
+                "counter+9000051":1,  //本体
+                    "hand_pop.5022051_01.2000164": "他似乎有事，将其放入<color=white><size=172%>俺寻思</size></color>。",
+                    "table.2000164+事件提示":1
+            }
+        }
+
+    ]
+}

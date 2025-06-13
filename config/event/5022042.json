@@ -1,0 +1,30 @@
+{
+    "id": 5022042,
+    "text": "震撼疗法幕后",
+    "is_replay": 0,
+    "auto_start_init":[1],
+    "start_trigger":false,
+    "on": {
+         "round_begin_ba": 1
+         }, 
+    "condition": {
+        "all": {
+            "counter.9000034<": 1, // 本体未触发
+            "counter.9000032>=": 1 // 阿卜德的游戏无捍卫者结局
+        }
+    },
+    "settlement": [
+        {
+            "action": {
+                "rite": 5012030,     // 开启震撼疗法
+                "prompt": {
+                    "id": "5022042_01",
+                    "text": "梅姬伤得很重，你必须快点想个办法",
+                    "icon": ["cards/2000006"]
+                },
+                "counter+9000034":1,
+                "event_off": 5022036
+            }
+        }
+    ]
+}

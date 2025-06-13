@@ -1,0 +1,28 @@
+{
+    "id": 5022084,
+    "text": "天空之歌前置",
+    "is_replay": 0,
+    "auto_start_init":[1],
+    "start_trigger":true,
+    "on": { 
+        "round_begin_ba":1
+    },
+    "condition": {
+        "counter.9000079>=":1  //材料筹备完成计数器
+    },
+    "settlement": [
+        {
+            "action": {
+                "clean.rite":5012042,  //清除驱魔专家
+                "rite":5012050,  //天空之歌-迷墙
+                "prompt": {
+                    "id": "5022084_01",
+                    "text": "你备好了仪式需要的材料，伊曼和薇瑞娜已经在家等你了，是时候去会一会梦中的邪恶了。",
+                    "icon": ["cards/2000001","cards/2000161","cards/2000021"]
+                },
+
+                "event_off":5022083
+            }
+        }
+    ]
+}

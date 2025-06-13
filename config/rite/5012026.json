@@ -1,0 +1,100 @@
+{
+    "id": 5012026,
+    "name": "野蛮与文明",
+    "text": "梅姬和扎齐伊的遭遇并非临时起意，你看见一个针对你的复仇计划已经初露端倪，如果再不做行动可能一切就晚了。而恰好你知道一个人，可能会对你的提议感兴趣……",
+    "tips": "",
+    "mapping_id":8001131,
+    "once_new":0,
+    "round_number": 1, 
+    "waiting_round":3,
+    "waiting_round_end_action":[
+     {
+            "condition":
+            {
+            },
+            "result_title":"",
+            "result_text":"你的怠慢让你付出了惨重的代价。",
+            "result":
+            {
+            },
+            "action":
+            {
+                "prompt":
+                {
+                    "id":"5012018_timeout_prompt",
+                    "text":"你死了",
+                    "icon":"cards/sudan"
+                },
+                "over":800
+            }
+        }
+    ],
+    "method_settlement": "",
+    "auto_begin": 0,
+    "auto_result":0,
+    "location": "野外:[9,14]", 
+    "icon": "rite_4", 
+    "tag_tips": [
+    ],
+    "tag_tips_up":{ 
+    },
+    "tips_text": [
+        "你与盟友一同拜访芮尔的营地"
+    ],
+    "open_conditions": [],
+    "random_text": {},
+    "random_text_up": {}, 
+    "random_effect": {},
+    "settlement_prior": [],
+    "settlement": [], 
+    "settlement_extre": [
+        {
+            "condition": {}, 
+            "result_title": "寻找你的军队",
+            "result_text": "你将家宅中的守卫扩充了三倍，又发动了所有眼线为你收集情报。你需要人马，需要线索，需要一个与你同仇敌忾的统领，才能突破阿卜德家族最后的堡垒。\n在雾气氤氲的清晨，你召集了几位亲信的盟友，骑乘着快马，向城外飞驰而去。",
+            "result": {}, 
+            "action": {
+            } 
+        },
+        {
+            "condition": {},
+            "result_title": "因为你们有共同的敌人",
+            "result_text": "在听完你的陈述，以及得知死去宰相依旧阴魂不散后，芮尔甚至不等你开口就大咧咧地拍了拍自己的胸脯。\n“只要你一句话，我的弟兄们绝不推辞，但话说回来……”芮尔挠了挠头，“你们城市民为什么那么热衷于游戏？”你向她递过一杯奶酒，试图向她解释清楚，什么是文明的基石——就是用各种规则限制人们不要互相残杀。\n“这说不通阿，如果这些所谓的规则真的有用的话，为什么你还要跑到我这里来寻求报复？”\n你起身穿戴好甲胄，又用手指拭过寒光乍现的锋刃，将其收入鞘中，你对她露出一个苦涩的笑容：\n“说真的吗？我不知道。不管穿上什么样的衣服，拥有多少财富，可能总有些东西是不会改变的吧。”",
+            "result": {
+                "s1+体魄": 2,
+                "s1+战斗": 2
+            },
+            "action": {
+                "counter+9000044":1  //完成野蛮与文明计数器
+            }
+        }
+    ],
+    "cards_slot": {
+        "s1": { 
+            "condition": {
+                "type": "char",
+                "any":{
+                    "主角": 1,
+                    "追随者":1
+                } 
+                },
+            "open_adsorb": 0, 
+            "is_key": 1, 
+            "is_empty": 0,
+            "is_enemy": 0,
+            "text": "你必须亲自拜访"
+        },
+        "s2": { 
+            "condition":{
+                "type":"char",
+                "芮尔":1,
+                "is":2000771
+            },
+            "open_adsorb": 1, 
+            "is_key": 0, 
+            "is_empty": 1,  
+            "is_enemy": 0,
+            "text": "芮尔答应帮忙"
+        }
+    }
+}

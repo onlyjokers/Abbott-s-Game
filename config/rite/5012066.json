@@ -1,0 +1,117 @@
+ {
+        "id": 5012066,
+        "name": "修缮神庙",
+        "text": "不知为何，在建筑各种奇观和修葺神灵的居所上，你积攒了丰富的经验。作为一个合格的包工头，你制定了详细的方案，随时可以动工了。",       
+        "tips": "",
+        "mapping_id":8001256,
+        "once_new":0,
+        "round_number": 2,
+        "waiting_round":0, 
+        "waiting_round_end_action":[
+        ],
+        "method_settlement": "",
+        "auto_begin": 0, 
+        "auto_result": 0,                            
+        "location": "野外:[9,14]", 
+        "icon": "rite_4",  
+        "tag_tips": [
+        ],
+        "tag_tips_up":{
+            "tips":["生存"],
+            "type":"normal_result"
+        },
+        "tips_text":[
+            "为应对艰难的环境，你的队伍总生存至少需要满足8点。"
+        ],
+        "open_conditions": [
+            {
+                "condition": {
+                    "f:生存>=":8     
+                },
+                "tips": "队伍的生存属性不足以支撑你完成修缮。"
+            }
+        ],
+        "random_text": { 
+        },
+        "random_text_up":{
+        },
+        "random_effect": {          
+        },
+        "settlement_prior": [
+        ],                
+        "settlement": [
+        ],                
+        "settlement_extre": [
+            {
+                "condition": {
+                },
+                "result_title":"",
+                "result_text": "[s2.name]克服了峡谷峭壁之间的险峻路势，成功将物资补给运输到工程队手中。这些物资在这群能工巧匠手中物尽其用，不出多日，便开凿出了新的水井，修复了受损的立柱，孩子们甚至有了属于他们的休息室！\n残破的神像，在你和修邦的一致意见下保留了原样，你们一致认为，现在的祂，自有命运的神圣与美感。",
+                "result": 
+                { 
+                    "s2+体魄":2,
+                    "s3+体魄":2,
+                    "no_show":{
+                        "clean.s1":1
+                    },
+                    "counter+7100001": 1 //善名+1
+                },
+                "action": {
+                    "event_on":5022078 //修邦的感谢
+                }
+            }
+        ],
+        "cards_slot":
+        {
+            "s1":
+            {
+                "condition":
+                {
+                    "type":"item",
+                    "is":2100028
+                },
+                "open_adsorb":0,
+                "is_key":0,
+                "is_empty":0,
+                "is_enemy":0,
+                "text":"命运女神庙"
+            },
+            "s2":
+            {
+                "condition":
+                {
+                    "type":"char"   
+                },
+                "open_adsorb":0,
+                "is_key":0,
+                "is_empty":0,
+                "is_enemy":0,
+                "text":"你可以亲自或派遣追随者协助修复神庙"
+            },
+            "s3":
+            {
+                "condition":
+                {
+                    "type":"char"   
+                },
+                "open_adsorb":0,
+                "is_key":0,
+                "is_empty":1,
+                "is_enemy":0,
+                "text":"你可以亲自或派遣追随者协助修复神庙"
+            },
+            "s4":
+            {
+                "condition":
+                {
+                    "type":"item",
+                    "cost.金币":8   
+                },
+                "open_adsorb":0,
+                "is_key":0,
+                "is_empty":0,
+                "is_enemy":0,
+                "text":"本项目至少需要8金币作为经费支持"
+            }
+        }
+    } 

@@ -1,0 +1,129 @@
+{
+    "id": 5012058,
+    "name": "月光光，心慌慌",
+    "text": "芮尔已被押解入狱，广场上的危机成功解除，你想应该算是完成了苏丹的任务。但出于对同袍的愧疚，又或是对马鲁夫的憎恶，你并不打算收手，而是打算再接再厉，将马鲁夫与他的罪恶彻底扼杀在苏丹的行宫。\n这并不算一件难事，但你隐隐觉得，似乎存在更好的解决办法。",
+    "tips": "",
+    "mapping_id":8001131,
+    "once_new":0,
+    "round_number": 1, 
+    "waiting_round":3,
+    "waiting_round_end_action":[
+    ],
+    "method_settlement": "",
+    "auto_begin": 0,
+    "auto_result":0,
+    "location": "宫廷:[8,12]", 
+    "icon": "rite_4", 
+    "tag_tips": [
+        "隐匿",
+        "战斗"
+    ],
+    "tag_tips_up":{ 
+        "tips":["隐匿","战斗"],
+        "type":"normal_result"
+    },
+    "tips_text": [
+        "你的隐匿和战斗属性是刺杀成功与否的关键。"
+    ],
+    "open_conditions": [],
+    "random_text": {},
+    "random_text_up": {
+            "r1":{
+            "text":"行动开始",
+            "type":"normal_result",
+            "type_tips":"你的隐匿和战斗为你提供了完整的骰子数量。",
+            "low_target": 2,
+            "low_target_tips": "你至少需要2点成功。"
+        }
+    }, 
+    "random_effect": {},
+    "settlement_prior": [],
+    "settlement": [], 
+    "settlement_extre": [
+        {
+            "condition": {}, 
+            "result_title": "夜色如冰",
+            "result_text": "苏丹的庇护更多存在于象征层面，很少有人胆敢挑衅苏丹的禁卫，但你显然是一个例外。月色如水，涤净了白日里的嘈杂与喧闹，流淌在空空荡荡的广场。",
+            "result": {
+
+            }, 
+            "action": {
+            } 
+        },
+        {
+            "condition": {
+                "r1:s2.隐匿+s2.战斗+s3.隐匿+s3.战斗>=":[3,5]
+            },
+            "result_title": "一次完美的暗杀",
+            "result_text": "[s2.name]的身影犹如鬼魅，绕过值勤的卫兵。通过外墙的立柱，进入马鲁夫的藏身处，取走了他的性命，这是一次经典的刺杀。没有目击者，也没有留下丝毫痕迹。一切就如你计划的那样……",
+            "result": {
+                "clean.s1":1,
+                "clean.s4":1
+            },
+            "action": {
+                "counter+9000061":1,  //马鲁夫暗杀任务完成标识
+                "event_on":5022069  //王之盛怒
+            }
+        },
+        {
+            "condition": {
+                "r1:s2.隐匿+s2.战斗+s3.隐匿+s3.战斗<":[3,5]
+            },
+            "result_title": "有刺客！",
+            "result_text": "[s2.name]惊扰了马鲁夫浅薄的睡眠，他大喊着向外逃去，守卫闻声而至，[s2.name]惊险地逃离了现场。但很显然，下次想杀马鲁夫，可就没那么容易了。",
+            "result": {
+                "clean.s4":1
+            },
+            "action": {
+                "counter+9000061":1,  //马鲁夫暗杀任务完成标识
+                "event_on":5022069  //王之盛怒
+            }
+        }
+    ],
+    "cards_slot": {
+        "s1": { 
+            "condition": {
+                "type": "char",
+                "is":2100024
+                },
+            "open_adsorb": 1, 
+            "is_key": 0, 
+            "is_empty": 0,
+            "is_enemy": 0,
+            "text": "熟睡的马鲁夫"
+        },
+        "s2": { 
+            "condition":{
+                "type": "char",
+                "追随者":1
+            },
+            "open_adsorb": 0, 
+            "is_key": 0, 
+            "is_empty": 0,  
+            "is_enemy": 0,
+            "text": "你需要指派一名盟友进行暗杀"
+        },
+        "s3": { 
+            "condition":{
+                "type": "item",
+                "消耗品":1
+            },
+            "open_adsorb": 0, 
+            "is_key": 0, 
+            "is_empty": 1,  
+            "is_enemy": 0,
+            "text": "你可以提供消耗品以提升成功的概率"
+        },
+        "s4": { 
+            "condition":{
+                "type": "item",
+                "is":2100025
+            },
+            "open_adsorb": 0, 
+            "is_key": 0, 
+            "is_empty": 0,  
+            "is_enemy": 0,
+            "text": "马鲁夫的罪证"
+        }
+    }
+}

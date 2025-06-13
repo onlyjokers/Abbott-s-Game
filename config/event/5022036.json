@@ -1,0 +1,28 @@
+{
+    "id": 5022036,
+    "text": "葬礼幕后",
+    "is_replay": 0,
+    "auto_start_init": [1],
+    "start_trigger": true,
+    "on": {
+         "round_begin_ba": 1
+         },
+    "condition": {
+        "all": {
+            "counter.9000029<": 1,
+            "any": {
+                "counter.9000026>=": 1, // “大逃杀-小失败”标记已设置
+                "counter.9000027>=": 1  // “大逃杀-大失败”标记已设置
+            }
+        }
+    },
+    "settlement": [
+        {
+            "action": {
+                "counter+9000029": 1,     // 标记本事件已触发
+                "rite": 5012027,     // 开启繁花盛开的葬礼
+                "event_off": 5022036
+            }
+        }
+    ]
+}

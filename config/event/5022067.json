@@ -1,0 +1,30 @@
+{
+    "id": 5022067,
+    "text": "搜查任务开启",
+    "is_replay": 1,
+    "auto_start_init":[1],
+    "start_trigger":true,
+    "on": {
+        "round_begin_ba":1
+    },
+    "condition": {
+        "counter.9000068>=":1,  //风声鹤唳前置启动过
+        "counter.9000056<":4,
+        "!rite":5012052,
+        "!rite":5012053,
+        "!rite":5012054,
+        "!rite":5012055  //场上不存在四个搜索仪式
+    },
+    "settlement": [
+        {
+            "action": {
+                "loot":6100000,  //四个随机仪式
+                "prompt": {
+                    "id": "5022067_01",
+                    "text": "你听说了一些有关小阿卜德的消息。",
+                    "icon": ["cards/2000001"]
+                }
+            }
+        }
+    ]
+}

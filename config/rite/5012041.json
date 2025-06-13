@@ -1,0 +1,92 @@
+ {
+        "id": 5012041,
+        "name": "薇瑞娜的帮助",
+        "text": "你发疯的动静吓坏了所有人，唯独薇瑞娜，这个奇怪的女孩，并不害怕，她希望帮助你。也许是这份平白的善意打动了你，你愿意试一试。",       
+        "tips": "",
+        "mapping_id":8000052,
+        "once_new":0,
+        "round_number": 1,
+        "waiting_round":0,
+        "waiting_round_end_action":[
+        ],        
+        "method_settlement": "",
+        "auto_begin": 0, 
+        "auto_result": 0,//需要手动启动
+        "location": "自宅:[2,12]", 
+        "icon": "rite_12", 
+        "tag_tips": [
+        ],
+        "tag_tips_up":{
+        },
+        "tips_text":[
+        ],
+        "open_conditions": [
+        ],
+        "random_text":{
+        },
+        "random_text_up":{
+        },
+        "settlement_prior": [
+        ],                
+        "settlement": [
+            {
+                "condition": {
+                },
+                "result_title":"薇瑞娜抓住你的手腕",
+                "result_text": "把你留在她身边。\n她的眼睛变得又黑又大，目光径直穿过了你在这个空间的肉身，聚焦在你的思维深处，这里栖息着一些不速之客……你感到一种异样在那里萌发。你耳边喋喋不休的声音，纷乱如麻的思绪——躁动狂吠的疯狂，突然间安静下来，像是避光的虫豸一般被她的目光驱赶。\n你从刚才的奇妙体验中回过神来，问她做了什么。\n“薇瑞娜看见了烂叶子，薇瑞娜可以摘掉它，它不好，会让你生病。”女孩不满地扁了扁嘴，看来这就是她表达严肃的方式，她放开了你的手。\n“阿莫会让我这么做，每当他感到不舒服的时候。”",
+                "result": 
+                {
+                    "clean.s1":1,
+                    "s3+镇定之血":1,
+                    "s3+魔力":1
+                },
+                "action": {
+                    "event_on":5022059  //薇瑞娜功能性任务生效通告
+                }
+            }
+        ],               
+        "settlement_extre": [
+        ],
+        "cards_slot":
+        {
+            "s1":
+                {
+                    "condition": 
+                    {
+                        "type":"item",
+                        "is":2000326           
+                    },
+                    "open_adsorb":1,
+                    "is_key":0,
+                    "is_empty":1,
+                    "is_enemy":0,
+                    "text":"疯狂" 
+                },
+            "s2":
+                {
+                    "condition": 
+                    {
+                        "type":"char",
+                        "主角":1            
+                    },
+                    "open_adsorb":0,
+                    "is_key":0,
+                    "is_empty":0,
+                    "is_enemy":0,
+                    "text":"你有些忐忑" 
+                },
+            "s3":
+                {
+                    "condition": 
+                    {
+                        "type":"char",
+                        "薇瑞娜":1 
+                    },
+                    "open_adsorb":1,
+                    "is_key":0,
+                    "is_empty":0,
+                    "is_enemy":0,
+                    "text":"薇瑞娜希望能帮到你" 
+                }
+        }
+    } 

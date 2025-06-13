@@ -1,0 +1,186 @@
+ {
+        "id": 5012065,
+        "name": "漫长的归途",
+        "text": "你的炫耀行为招惹了不必要的麻烦，黄金辛迪加的余孽追杀过来，截断了修邦和孩子们的前进之路，他们需要你的襄助。",       
+        "tips": "",
+        "mapping_id":8001170,
+        "once_new":0,
+        "round_number": 2,
+        "waiting_round":3,
+        "waiting_round_end_action":[ 
+            {
+                "condition": {
+                },
+                "result_title":"",
+                "result_text": "",
+                "result": 
+                {
+                },
+                "action": {
+                    "prompt":{
+                        "id":"5012065_01",
+                        "text":"刺客从阴影中乍现，又重回阴影之中，修邦和十几个孩子的尸体被沿途的黄沙掩埋。此事已经发生，你已无可挽回。"
+                    },
+                    "clean.s1":1,
+                    "clean.s2":1
+                }
+            }
+        ],        
+        "method_settlement": "",
+        "auto_begin": 0, 
+        "auto_result": 0,//需要手动启动
+         "location": "野外:[9,14]", 
+        "icon": "rite_17", 
+        "tag_tips": [
+            "体魄",
+            "战斗"
+        ],
+        "tag_tips_up":{
+            "tips":["战斗","体魄"],
+            "type":"fight_result"
+        },
+        "tips_text":[
+            "你需要召集具有战斗和体魄属性的盟友保护苦修院的车队。"
+        ],
+        "open_conditions": [
+        ],
+        "random_text":{
+        },
+        "random_text_up":{
+            "r1": {
+            "text": "你的盟友是否能够阻止这场伏击。",
+            "type": "fight_result",
+            "type_tips": "[s4.name]的掷骰结果会受到刺客的战斗和体魄属性影响。",
+            "low_target": 2,
+            "low_target_tips": "至少需要2点成功才能避免这场惨剧。"
+        }
+        },
+        "settlement_prior": [
+        ],                
+        "settlement": [            
+        ],               
+        "settlement_extre": [
+            {
+                "condition": {
+                "all":{
+                    "s5":1,
+                    "r1:s4.体魄+s4.战斗+s5.体魄+s5.战斗+s3.体魄+s3.战斗-s2.体魄-s2.战斗>=":[2,5]  
+                }
+                },
+                "result_title":"盛情难却",
+                "result_text": "[s3.name]轻松地击败了奇袭的刺客，并从一人口中问出了幕后黑手的位置，他正等在不远处的山坳中等待他们回去复命。\n既然主人家盛情邀请，那只能却之不恭了，[s3.name]找到了那名猥琐的贵族，饶有兴致地听完了他的一项又一项许诺，直到除了生命已经给不出任何东西的时候，[s3.name]取走了他的生命。\n你折断了一张杀戮卡，同时敲打了黄金辛迪加的余党们：现在，命运神庙是你的地盘了，哪个想动手之前，都必须掂量掂量自己有几个脑袋。",
+                "result": 
+                {
+                    "s3+战斗":1,
+                    "s3+体魄":1,
+                    "clean.s2":1,
+                    "clean.s5":1,
+                    "counter+7100003":1 //权势+1
+                },
+                "action": {
+                    "event_on":5022077  //修缮神庙
+                }
+            },
+            {
+                "condition": {
+                "all":{
+                    "!s5":1,
+                    "r1:s4.体魄+s4.战斗+s5.体魄+s5.战斗+s3.体魄+s3.战斗-s2.体魄-s2.战斗>=":[2,5]  
+                }
+                },
+                "result_title":"",
+                "result_text": "[s3.name]很轻松地斩杀了奇袭的刺客，并在更多追兵到来之前带领苦修院的众人快速离开了。",
+                "result": 
+                {
+                    "s3+战斗":1,
+                    "s3+体魄":1,
+                    "clean.s2":1
+                },
+                "action": {
+                    "event_on":5022077  //修缮神庙
+                }
+            },
+            {
+                "condition": {
+                    "r1:s4.体魄+s4.战斗+s5.体魄+s5.战斗+s3.体魄+s3.战斗-s2.体魄-s2.战斗<":[2,5]  
+                },
+                "result_title":"",
+                "result_text": "[s3.name]被刺客砍成重伤，敌人一拥而上，对着车蓬就是一顿乱戳，直到惨叫声不再传出才仓皇逃跑。待你赶来时，苦修院的幸存者们已经悉数死亡。",
+                "result": 
+                {
+                    "s3+equip": 2000098,//受伤
+                    "clean.s1":1,
+                    "no_show":{"clean.s2":1}
+                },
+                "action": {
+                }
+            }
+        ],
+        "cards_slot":
+        {
+            "s1":
+                {
+                    "condition": 
+                    {
+                        "type":"char",
+                        "is": 2100029
+                    },
+                    "open_adsorb":1,
+                    "is_key":0,
+                    "is_empty":0,
+                    "is_enemy":0,
+                    "text":"苦修院修士"
+                },
+            "s2":
+                {
+                    "condition": 
+                    {
+                        "type":"char",
+                        "is":2000342
+                    },
+                    "open_adsorb":1,
+                    "is_key":0,
+                    "is_empty":0,
+                    "is_enemy":0,
+                    "text":"伏击的刺客"
+                },
+            "s3":
+                {
+                    "condition": 
+                    {
+                        "type":"char"
+                    },
+                    "open_adsorb":0,
+                    "is_key":0,
+                    "is_empty":0,
+                    "is_enemy":0,
+                    "text":"你的盟友"
+                },
+            "s4":
+                {
+                    "condition": 
+                    {
+                        "type":"item"
+                    },
+                    "open_adsorb":0,
+                    "is_key":0,
+                    "is_empty":1,
+                    "is_enemy":0,
+                    "text":"能派上用场的消耗品"
+                },
+            "s5":
+                {
+                    "condition": 
+                    {
+                        "type":"sudan",
+                        "杀戮":1,
+                        "rare<=":3
+                    },
+                    "open_adsorb":0,
+                    "is_key":0,
+                    "is_empty":1,
+                    "is_enemy":0,
+                    "text":"你可以借机折断一张不高于白银品级的杀戮卡"
+                }
+        }
+    } 

@@ -1,0 +1,68 @@
+ {
+        "id": 5012070,
+        "name": "罪人之死",
+        "text": "马鲁夫被押解至刑场进行公开的处决，罪人的黄昏因你降临，你付出了一些代价，但于公于私，你都做得不错。",       
+        "tips": "",
+        "mapping_id":8001008,
+        "once_new":0,
+        "round_number": 1,
+        "waiting_round":5,
+        "waiting_round_end_action":[
+        ],        
+        "method_settlement": "",
+        "auto_begin": 1,
+        "auto_result": 1,
+        "location": "宫廷:[2,10]", 
+        "icon": "rite_6", 
+        "tag_tips": [  
+        ],
+        "tag_tips_up":{
+        },
+        "tips_text":[
+        ],
+        "open_conditions": [
+        ],
+        "random_text":{
+        },
+        "random_text_up":{     
+           
+        },
+        "settlement_prior": [
+           
+        ],                   
+        "settlement": [
+            {
+                "condition": {
+                    
+                },
+                "result_title":"",
+                "result_text": "在刑场外站满了围观的人群，群情激愤的平民带来家中的农具和厨具，纷纷往马鲁夫身上招呼……行刑官好不容易才保住了犯人的小命，使他不至于在用刑之前就撒手人寰。\n马鲁夫的人头落入沁血的篮子中，围观者爆发出一阵山呼海啸般的欢呼，他们歌颂着你的名字，庆祝着一个罪人的死去。",
+                "result": 
+                {
+                    "clean.s1":1 //移除马鲁夫
+                },
+                "action": {         
+                    "counter+9000062":1  //马鲁夫审判任务计数器
+                }
+            }
+        ],               
+        "settlement_extre": [ 
+
+        ],
+        "cards_slot":
+        {
+            "s1":
+                {
+                    "condition": 
+                    {
+                        "type":"char",
+                        "is":2100024
+                    },
+                    "open_adsorb":1,
+                    "is_key":0,
+                    "is_empty":0,
+                    "is_enemy":0,
+                    "text":"马鲁夫被押上刑场"
+                }
+        }
+    } 

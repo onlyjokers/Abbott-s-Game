@@ -1,0 +1,62 @@
+{
+    "id": 5022061,
+    "text": "战前训练",
+    "is_replay": 0,
+    "auto_start": false,
+    "start_trigger": true,
+    "on": {
+    },
+    "condition": {
+    },
+    "settlement": [
+        {
+            "tips_resource": "",
+            "tips_text": "",
+            "action": {
+                "option": {
+                    "id": "5022061_01",
+                    "text": "光创造了影子，恐惧雕刻了勇敢。因为扎齐伊和梅姬的一些表现，你拥有了必胜的决心。\n你可以在决战前选择一位盟友进行提升，时间有限，自然无法面面俱到。",
+                    "icon": "cards/2000063",
+                    "items": [
+                        {
+                            "text": "我需要更勇猛的战士",
+                            "tag": "op1"
+                        },
+                        {
+                            "text": "我需要更迅捷的游侠",
+                            "tag": "op2"
+                        },
+                        {
+                            "text": "我需要更强大的法师",
+                            "tag": "op3"
+                        }
+                    ]
+                },
+                "case:op1": {
+                    "rite":5012046,
+                    "prompt": {
+                        "id": "5022061_prompt_1",
+                        "text": "你可以指定一名盟友参加战斗训练。",
+                        "icon": "cards/2000001"
+                    }
+                },
+                "case:op2": {
+                    "rite":5012044,
+                    "prompt": {
+                        "id": "5022061_prompt_2",
+                        "text": "你可以指定一名盟友参加生存训练。",
+                        "icon": "cards/2000001"
+                    }
+                },
+                "case:op3": {
+                    "rite":5012045,
+                    "prompt": {
+                        "id": "5022061_prompt_3",
+                        "text": "你可以指定一名盟友进行施法训练。",
+                        "icon": "cards/2000001"
+                    }
+                }
+            }
+        }
+    ]
+}

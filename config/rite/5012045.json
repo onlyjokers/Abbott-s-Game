@@ -1,0 +1,99 @@
+ {
+        "id": 5012045,
+        "name": "法师的魔杖",
+        "text": "不曾有任何一个时刻，你将亲人的安危视为行动的准则，梅姬和扎齐伊的表现点燃了你的决心。而现在，你希望能将这份决心传递给盟友，以期他们能在决战中助你一臂之力。",       
+        "tips": "",
+        "mapping_id":8001170,
+        "once_new":0,
+        "round_number": 1,
+        "waiting_round":0,
+        "waiting_round_end_action":[ 
+        ],        
+        "method_settlement": "",
+        "auto_begin": 0, 
+        "auto_result": 0,//需要手动启动
+         "location": "野外:[9,14]", 
+        "icon": "rite_17", 
+        "tag_tips": [
+            "魔力"
+        ],
+        "tag_tips_up":{
+            "tips":["魔力"],
+            "type":"normal_result"
+        },
+        "tips_text":[
+            "请选择具有对应属性的盟友进行强化。",
+            "掷骰结果会对训练的成效产生影响。",
+            "失败不会有惩罚。"
+        ],
+        "open_conditions": [
+        ],
+        "random_text":{
+        },
+        "random_text_up":{
+            "r1": {
+            "text": "决心可以强化他们的魔力属性，但掷骰同样重要。",
+            "type": "normal_result",
+            "type_tips": "他们的魔力将决定掷骰的成功与否。",
+            "low_target": 3,
+            "low_target_tips": "至少需要3点成功才能获得更好的结果。"
+        }
+        },
+        "settlement_prior": [
+        ],                
+        "settlement": [            
+        ],               
+        "settlement_extre": [
+            {
+                "condition": {
+                "r1:s1.魔力>=":[3,5] 
+                },
+                "result_title":"训练卓有成效",
+                "result_text": "[s1.name]获得了魔力的提升，[s1.gender]已经是一名优秀的法师了，你在决战中指望得上他们的魔法。",
+                "result": 
+                {
+                "s1+魔力":5
+                },
+                "action": {
+                }
+            },
+            {
+                "condition": {
+                "r1:s1.魔力<":[3,5]  
+                },
+                "result_title":"训练马马虎虎",
+                "result_text": "你不能指望一个人能理解你内心的豪情壮志，虽然收效甚微，但也不能说是毫无收获。",
+                "result": 
+                {
+                "s1+魔力":2
+                },
+                "action": {
+                }
+            }
+        ],
+        "cards_slot":
+        {
+            "s1":
+                {
+                    "condition": 
+                    {
+                        "type":"char"
+                    },
+                    "open_adsorb":0,
+                    "is_key":0,
+                    "is_empty":0,
+                    "is_enemy":0,
+                    "text":"接受你决心的盟友",
+                    "pops": [
+                        {
+                            "condition": {
+                                "s1": 1 
+                            },
+                            "action": {
+                                "pop.5012045_01.s1": "我准备好了"
+                            }
+                        }
+                    ]
+                }
+        }
+    } 

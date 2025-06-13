@@ -1,0 +1,195 @@
+ {
+        "id": 5012037,
+        "name": "飓风营救",
+        "text": "在这场你死我活的博弈中，发生在阿卜德家族宅邸的战争只是小阿卜德计划的一部分。他趁你出征在外，突袭了你的家宅，但并没有找到他想要的东西。\n你并不理解如此大费周章的意义，但这可能是你找到小阿卜德的有利机会，你不打算放过。",       
+        "tips": "",
+        "mapping_id":8000107,
+        "once_new":0,
+        "round_number": 1,
+        "waiting_round":3,
+        "waiting_round_end_action":[
+            {
+                "condition": {
+                },
+                "result_title":"",
+                "result_text": "",
+                "result": 
+                {
+                },
+                "action": {
+                    "clean.s3":1, //盟友死亡
+                    "counter-7100003":1, //权势-1
+                    "counter-7100004":1, //侠名-1
+                    "prompt":{
+                        "id":"5012037_01",
+                        "text":"你的怠慢让你失去了一名盟友，有些秘密再也不会揭晓了。"
+                    }
+                }
+            }
+        ],        
+        "method_settlement": "",
+        "auto_begin": 0,
+        "auto_result": 0,
+        "location": "上城区:[1,6]", 
+        "icon": "rite_17", 
+        "tag_tips": [
+        ],
+        "tag_tips_up":{
+            "tips":["战斗","体魄"],
+            "type":"fight_result"
+        },
+        "tips_text":[
+            "你需要指派一名追随者进行追踪，必要的话，战斗。",
+            "失败可能会导致死亡。"
+        ],
+        "open_conditions": [
+        ],
+        "random_text":{
+        },
+        "random_text_up":{
+            "r1":{
+                "text":"一打三，情况紧急！",
+                "type":"fight_result",
+                "type_tips":"你的骰子数受挑战者的战斗和体魄的影响。",
+                "low_target": 3,
+                "low_target_tips": "你至少需要3点成功。"
+            }
+           
+        },
+        "settlement_prior": [
+        ],                
+        "settlement": [
+        ],               
+        "settlement_extre": [
+            {
+                "condition": {
+                },
+                "result_title":"三个绑匪和两个囚犯",
+                "result_text": "小阿卜德的手下形色仓皇，留下了太多可供追踪的痕迹。傍晚，[s3.name]带领你的手下尾随着来到一座废弃的磨坊，之后便是丘陵，马蹄印到此便断了。[s3.name]在距离磨坊很远的地方绕行了一会，看见了磨坊后拴着的四匹马，心中有了主意……[s3.gender]手脚轻盈，像猫科动物一般，沿着外墙爬到磨坊连接风车的横梁上，是的，这里能看见里面的动静，热闹极了。\n三个黑衣蒙面的恶徒，加上两个囚犯，[s2.name]被五花大绑，另一人看来已经死了。[s3.name]认出了那位苍老的囚犯，好像叫沙迈来着。",
+                "result": 
+                {              
+                },
+                "action": {     
+                }
+            },
+            {
+                "condition": {
+                    "r1:s3.战斗+s3.体魄+s4.战斗+s4.体魄-s1.战斗-s1.体魄>=":[3,5]
+                },
+                "result_title":"磨坊中的战斗",
+                "result_text": "[s3.name]向在外蹲守的帮手打了个信号，顺势跳下了房梁，扔给[s3.name]一把匕首，便与几名绑匪战在一处。\n就当[s3.gender]招架无力时，[s2.name]挣脱了束缚，加入了战斗……形势迎来了逆转，将三名绑匪尽数斩杀。",
+                "result": 
+                {    
+                    "clean.s2":1,
+                    "s3+战斗":2,
+                    "s3+体魄":2,
+                    "s2+equip":2000098
+                },
+                "action": {         
+
+                }
+            },
+            {
+                "condition": {
+                    "r1:s4.战斗+s4.体魄+s3.战斗+s3.体魄-s1.战斗-s1.体魄<":[3,5]
+                },
+                "result_title":"双拳难敌六手",
+                "result_text": "[s3.name]向在外蹲守的帮手打了个信号，顺势跳下了房梁，与几名绑匪战在一处。\n[s3.gender]明显难以抵挡，在狭隘的空间中进退两难，很快便被砍成重伤。\n你的手下破门而入，场面一度十分混乱，待到尘埃落定时，几名蒙面人已经悉数死亡。",
+                "result": 
+                {    
+                    "clean.s2":1,
+                    "s3+战斗":1,
+                    "s3+体魄":1,
+                    "s2+equip":2000098,
+                    "s3+equip":2000098
+                },
+                "action": {         
+                }
+            },
+            {
+                "condition": {
+                },
+                "result_title":"一地鸡毛",
+                "result_text": "[s3.name]向你汇报了事件的经过，发生这样的事情，[s3.gender]本以为你会大发雷霆，但你只是淡淡地点了点头。\n他们为什么要杀老沙迈？\n[s2.name]艰难地回答了你的问题：“他们提到了一份名单，老沙迈的名字就在上面，至于原因……原谅我，大人，我还没有听清，便被他们发现了……”",
+                "result": 
+                {    
+                },
+                "action": { 
+                    "event_on":5022066  //风声鹤唳        
+                }
+            },
+            {
+                "condition": {
+                    "counter.9000045>=":1 //之前获得过苦修院线索
+                },
+                "result_title":"蒙面绑匪的身份",
+                "result_text": "你在检查尸体时发现，在外套下还穿着一身灰色的僧服。结合之前阿里木获得的线索，难道这才是小阿卜德不曾出现在公众视野中的原因？他曾是个侍僧，又或是与他们关系密切……\n你被其中一人的挂坠所吸引，是一个轮盘形状的骨雕，刻画着密密麻麻的细小符文。你并不认识它隶属于哪种信仰，但隐约感觉得到，这个小东西并不简单。",
+                "result": 
+                {    
+                    "card":[2100020,"已拥有+1"]  //获得命运轮盘
+                },
+                "action": {         
+                }
+            }
+            
+        ],
+        "cards_slot":
+        {
+            "s1":
+            {
+                "condition": 
+                {
+                    "type":"char",
+                    "is":2100019
+                },
+                "open_adsorb":1,
+                "is_key":0,
+                "is_empty":0,
+                "is_enemy":1, 
+                "text":"蒙面绑匪" 
+            },
+            "s2":
+                {
+                    "condition": 
+                    {
+                        "type":"char",
+                        "追随者":1,
+                        "!薇瑞娜":1,
+                        "!妻子":1,
+                        "!怪物":1
+                    },
+                    "open_adsorb":1,
+                    "is_key":0,
+                    "is_empty":0,
+                    "is_enemy":0,
+                    "text":"大意的盟友"
+                },
+            "s3":
+                {
+                    "condition": 
+                    {
+                        "type":"char",
+                        "!怪物":1
+                    },
+                    "open_adsorb":0,
+                    "is_key":0,
+                    "is_empty":0,
+                    "is_enemy":0,
+                    "text":"救援行动的盟友"
+                },
+            "s4":
+                {
+                    "condition": 
+                    {
+                        "type":"item",
+                        "cost.消耗品=":1,
+                        "!金币":1
+                    },
+                    "open_adsorb":0,
+                    "is_key":0,
+                    "is_empty":1,
+                    "is_enemy":0,
+                    "text":"协助营救的消耗品"
+            }
+        }
+    } 

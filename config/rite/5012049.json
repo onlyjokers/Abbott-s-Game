@@ -1,0 +1,98 @@
+{
+    "id": 5012049,
+    "name": "筹备仪式的材料",
+    "text": "你需要找医馆的伙计采购举行“天空之歌”的材料，伊曼给了你一份清单，但看到上面的内容，你实在有点放心不下……",       
+    "tips": "",
+    "mapping_id":8001110, 
+    "once_new":0,
+    "round_number": 1,
+    "waiting_round":3,
+    "waiting_round_end_action":[
+        {
+            "condition":
+            {
+                
+            },
+            "result_title":"",
+            "result_text": "在日复一日的梦魇和尖叫中，薇瑞娜日渐消沉。即便是阳光明媚的日子，她也不再欢笑，游离在梦境与现实的边境线，日益恍惚。",
+            "result": 
+            {   
+            },
+            "action":
+            {
+                "counter+9000055":1  //备用计数器
+            }
+        }
+    ],
+    "method_settlement": "",
+    "auto_begin": 0,
+    "auto_result":0,
+    "location": "商业区:[1,3]", 
+    "icon": "rite_2", 
+    "tag_tips": [
+    ],
+    "tag_tips_up":{
+
+    },
+    "tips_text":[
+        "采购这些素材需要花费8金币"
+    ],
+    "open_conditions": [
+    ],
+    "random_text":{
+    },
+    "random_text_up":{
+    },
+    "settlement_prior": [
+    ],                
+    "settlement": [
+        {
+            "condition":
+            {
+                "s2":1
+            },
+            "result_title":"你和你名震四海的游戏",
+            "result_text": "医馆的伙计仔细查看你递过去的单子，脸色凝重，不时瞥你一眼，你讪讪地笑笑，充分理解他的忧虑。\n毕竟伊曼让你准备的材料可太不寻常了：颠茄、马钱子、毒蝇伞、乌头、狼芹，还有许多你叫不上名字的……但根据你认识的品种来说，应该也不会好到哪里去。\n“[player.name]大人。”医馆的伙计认识你，“我们这里有现成的灵药能帮您完成任务，犯不着自己去调配这么危险的药剂……”\n你刚想开口解释，就被热情的伙计打断了。\n“不过像您这么有品味的人，应该也看不上我们俗气的预制产品，得嘞，我这就去为您准备！”\n当你抱着能毒死一条街的药材出门时，你搜肠刮肚地回忆，自己到底与伊曼有没有过节……\n总而言之，该回去了。",
+            "result": 
+            { 
+                "card":[2000306,"已拥有+1"]
+            },
+            "action":
+            {
+                "counter+9000079":1  //筹备材料完成的计数器
+            }
+        }
+       
+    ],                
+    "settlement_extre": [
+       
+    ],
+    "cards_slot":
+    {
+        "s1":
+        {
+            "condition": 
+            {
+                "type":"char"
+            },
+            "open_adsorb":0,
+            "is_key":0,
+            "is_empty":0,
+            "is_enemy":0,
+            "text":"你或者你的追随者" 
+        },
+        "s2":
+        {
+            "condition": 
+            {
+                "type":"item",
+                "cost.金币":8
+            },
+            "open_adsorb":0,
+            "is_key":0,
+            "is_empty":0,
+            "is_enemy":0,
+            "text":"你需要花费8枚金币以采购这些素材"
+        }
+    }
+} 

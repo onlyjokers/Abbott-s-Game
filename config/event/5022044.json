@@ -1,0 +1,36 @@
+{
+    "id": 5022044,
+    "text": "关闭铲除祸根",
+    "is_replay": 0, //是否可以重复触发
+    "auto_start_init": [1],
+    "start_trigger": true, // 是否启动就立即开始校验条件
+    "on": { //时机
+        "round_begin_ba": 1
+    },
+    "condition": { //条件
+        "all": {
+            "counter.9000031>=":1,  //阿卜德的游戏捍卫者分支，避免未将这些卡加入卡池就触发该仪式
+            "counter.9000037":1,
+            "counter.9000038":1,
+            "counter.9000039":1,
+            "counter.9000040":1,
+            "counter.9000041":1
+        }
+    },
+    "settlement": [ //效果 
+        {
+            "action": {
+                "counter+9000036": 1, //铲除祸根关闭计数器
+                "prompt": {
+                    "id": "5022044_01",
+                    "text": "你已经完成了你的复仇，是否还如你所愿？现在没工夫多想了，是时候继续前进了！",
+                    "icon": "cards/2000001"
+                },
+                "clean.rite": 5012029, //关闭铲除祸根
+                "success": {
+                    "event_off": 5321144
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "id": 5022081,
+    "text": "检测阿卜德死亡完成的幕后",     
+    "is_replay": 0, //是否可以重复触发
+    "auto_start_init": [1],
+    "start_trigger": false, // 是否启动就立即开始校验条件
+    "on":{   //时机
+    "round_begin_ba":1
+    },
+    "condition":{  //条件
+        "!have.2000349":1, //阿卜德已死
+        "counter.9000083<":1
+    },
+    "settlement": [    //效果 
+        {
+            "tips_resource":"", 
+            "tips_text":"",
+            "action":{
+                "counter+9000010":1,  //宰相死亡条件达成的计数器
+                "counter+9000083":1,
+                "prompt":{
+                "id":"5022081_01",
+                "text":"阿卜德死去的消息震惊了朝野，仿佛一堵镇守着浑浊潭水的水坝轰然决堤。在窃窃私语中，你听到了绝望的声音。",
+                "icon":"cards/2000349"
+                }
+            }
+        }
+    ]
+}

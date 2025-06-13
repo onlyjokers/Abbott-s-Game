@@ -1,0 +1,33 @@
+{
+    "id": 5022085,
+    "text": "名单上的贵族们前置",
+    "is_replay": 0,
+    "auto_start_init":[1],
+    "start_trigger":false,
+    "on": { 
+        "round_begin_ba":1
+    },
+    "condition": {
+        "all"  :{
+        "counter.9000082<":1,  //本体
+        "any":{
+        "counter.9000058>=":1,  //协助芮尔
+        "counter.9000059>=":1  //镇压芮尔
+        }
+        }
+    },
+    "settlement": [
+        {
+            "action": {
+                "rite":5012057,  //名单上的贵族们
+                "counter+9000082":1,  //本体
+                "prompt": {
+                    "id": "5022085_01",
+                    "text": "你设法解决了芮尔的危机，现在是时候和马鲁夫聊一聊了。",
+                    "icon": ["cards/2000001","cards/2000580"]
+                },
+                "event_off":5022085
+            }
+        }
+    ]
+}

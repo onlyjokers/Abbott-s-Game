@@ -1,0 +1,63 @@
+ {
+        "id": 5012039,
+        "name": "衰微的思想",
+        "text": "从战场上回来后，你身上的血似乎怎么也洗不干净，头发上，指甲缝里，身上的每一寸皮肤……你能听见你的呼吸变得很奇怪，像是漏了气似的嘶喘，你的手脚抬不起来，手指一旦攥紧了就松不开，一只眼皮一直在抽搐，你到底怎么了？",       
+        "tips": "",
+        "mapping_id":8000005,
+        "once_new":1,
+        "round_number": 1,
+        "waiting_round":0,
+        "waiting_round_end_action":[
+        ],        
+        "method_settlement": "",
+        "auto_begin": 1, 
+        "auto_result": 0,//需要手动启动
+        "location": "自宅:[2,10]", 
+        "icon": "rite_9", 
+        "tag_tips": [
+        ],
+        "tag_tips_up":{
+        },
+        "tips_text":[
+        ],
+        "open_conditions": [
+        ],
+        "random_text":{
+        },
+        "random_text_up":{
+        },
+        "settlement_prior": [
+        ],                
+        "settlement": [
+            {
+                "condition": {
+                },
+                "result_title":"失能症",
+                "result_text": "你是胜利的一方，不是吗？你伤害了他，他伤害了你，你又狠狠报复了他，他现在连家都没有了，全天下的人都知道不要和你作对了，但见鬼了，小阿卜德好像一点都不在乎。\n他在你眼皮子底下掳走了你的盟友。他没有采取更多行动，为什么？仅仅是在示威吗？还是在以这种方式警告你，你九死一生的那场战役不过是他算计之中的牺牲？\n无论你怎么行动，都好像落在四四方方的格子中，在他精心布置的棋盘上踽踽前行。下一步，你要怎么走呢？\n……\n那一天，所有人都以为你疯了，把自个锁在房间里，念着，笑着，哭着，大叫着，嘶吼着，结合近期发生的事情，他们不得不去思考一种可怕的可能——\n你被打败了。",
+                "result": 
+                {
+                    "card":[2000326,"已拥有+1"] //疯狂
+                },
+                "action": {
+                }
+            }
+        ],               
+        "settlement_extre": [
+        ],
+        "cards_slot":
+        {
+            "s1":
+                {
+                    "condition": 
+                    {
+                        "type":"char",
+                        "主角":1               
+                    },
+                    "open_adsorb":1,
+                    "is_key":0,
+                    "is_empty":0,
+                    "is_enemy":0,
+                    "text":"你被这个游戏灼伤" 
+                }
+        }
+    } 
