@@ -3,7 +3,7 @@
         "name": "仇人的踪迹",
         "text": "在各种怪力乱神的流言蜚语中，一则消息引起了你的注意——有人在郊外看见了一队身着灰色罩袍的流民。为了查清小阿卜德的去向，你决定派盟友去调查此事。",       
         "tips": "",
-        "mapping_id":8000135,
+        "mapping_id":8001047,
         "once_new":0,
         "round_number": 1,
         "waiting_round":0,
@@ -55,7 +55,8 @@
                 {  
                     "s1+战斗":1,
                     "s1+体魄":1,
-                    "coin":10
+                    "coin":10,
+                    "clean.s4":1
                 },
                 "action": {
                     "counter+9000056":1
@@ -70,7 +71,10 @@
                 "result_text": "[s1.name]没想通的是，明明只是来打探个情报，为啥这帮人不分青红皂白就揍了自己一顿，还尽瞄着下三路拳打脚踢……当[s1.name]眼泪汪汪向你汇报时，你想了好多伤心事才不至于笑出来。",
                 "result": 
                 {
-                    "s1+战斗":1
+                    "s1+战斗":1,
+                    "no_show":{
+                        "clean.s4":1
+                    }
                 },
                 "action": {
                     "counter+9000056":1
@@ -89,7 +93,8 @@
                 "result": 
                 {    
                     "clean.s3":1,
-                    "s1+战斗":1
+                    "s1+战斗":1,
+                    "clean.s4":1
                 },
                 "action": {
 
@@ -111,31 +116,44 @@
                 "text":"你可以指派任何人去处理此事" 
             },
             "s2":
+            {
+                "condition": 
                 {
-                    "condition": 
-                    {
-                        "type":"item",
-                        "消耗品":1
-                    },
-                    "open_adsorb":0,
-                    "is_key":0,
-                    "is_empty":1,
-                    "is_enemy":0,
-                    "text":"消耗品可以提升调查的成功率"
+                    "type":"item",
+                    "消耗品":1
                 },
+                "open_adsorb":0,
+                "is_key":0,
+                "is_empty":1,
+                "is_enemy":0,
+                "text":"消耗品可以提升调查的成功率"
+            },
             "s3":
+            {
+                "condition": 
                 {
-                    "condition": 
-                    {
-                        "type":"sudan",
-                        "征服":1,
-                        "rare<=":2
-                    },
-                    "open_adsorb":0,
-                    "is_key":0,
-                    "is_empty":1,
-                    "is_enemy":0,
-                    "text":"一张不高于青铜品级的征服卡"
-                }
+                    "type":"sudan",
+                    "征服":1,
+                    "rare<=":2
+                },
+                "open_adsorb":0,
+                "is_key":0,
+                "is_empty":1,
+                "is_enemy":0,
+                "text":"一张不高于青铜品级的征服卡"
+            },
+            "s4":
+            {
+                "condition": 
+                {
+                    "type":"char",
+                    "is":2100033
+                },
+                "open_adsorb":1,
+                "is_key":0,
+                "is_empty":0,
+                "is_enemy":0, 
+                "text":"灰衣人" 
+            }
         }
     } 

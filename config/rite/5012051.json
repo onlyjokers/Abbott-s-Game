@@ -3,7 +3,7 @@
         "name": "大夜弥天",
         "text": "你们成功通过了信任的考验，慌不择路落入了更深的梦境，那里是梦魇的栖息地。你们能否找到薇瑞娜，等待你们的又是什么？",       
         "tips": "",
-        "mapping_id":8001068,
+        "mapping_id":8001292,
         "once_new":1,
         "round_number": 1,
         "waiting_round":1,
@@ -131,18 +131,14 @@
                 {
                     "condition": 
                     {
-                        "type":"char",
-                        "all":{
-                            "is":2000021,
-                            "捕梦人":1
-                        }
-
+                        "type":"item",
+                        "消耗品":1
                     },
-                    "open_adsorb":1,
+                    "open_adsorb":0,
                     "is_key":0,
-                    "is_empty":0,
+                    "is_empty":1,
                     "is_enemy":0,
-                    "text":"你们彼此信任"
+                    "text":"辅助你们完成仪式的道具"
                 },
             "s4":
                 {
@@ -166,14 +162,18 @@
                 {
                     "condition": 
                     {
-                        "type":"item",
-                        "消耗品":1
+                        "type":"char",
+                        "all":{
+                            "is":2000021,
+                            "捕梦人":1
+                        }
+
                     },
-                    "open_adsorb":0,
+                    "open_adsorb":1,
                     "is_key":0,
-                    "is_empty":1,
+                    "is_empty":0,
                     "is_enemy":0,
-                    "text":"辅助你们完成仪式的道具"
+                    "text":"你们彼此信任"
                 }
         }
     } 

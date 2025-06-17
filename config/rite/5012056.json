@@ -18,7 +18,8 @@
         ],
         "tag_tips_up":{
         },        
-        "tips_text":[        
+        "tips_text":[     
+            "你需要指派一名高智慧属性的盟友才能开启调查。"   
         ],
         "open_conditions": [
         ],
@@ -50,13 +51,14 @@
                 {
                     "condition": 
                     {
-                        "type": "char"
+                        "type": "char",
+                        "智慧>=":5
                     },
                     "open_adsorb":0,
                     "is_key":0,
                     "is_empty":0,
                     "is_enemy":0,
-                    "text":"你的一位盟友，为你搜集情报"
+                    "text":"为你打探消息的一位盟友，其智慧至少为5点"
                 }
         }
     } 

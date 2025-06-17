@@ -3,7 +3,7 @@
         "name": "仇人的踪迹",
         "text": "在各种怪力乱神的流言蜚语中，一则消息引起了你的注意——有个人成天酗酒发疯，声称要为阿卜德事业复仇。为了查清小阿卜德的下落，你决定去调查此人。",       
         "tips": "",
-        "mapping_id":8000109,
+        "mapping_id":8001136,
         "once_new":0,
         "round_number": 1,
         "waiting_round":0,
@@ -52,9 +52,13 @@
                 "result": 
                 {
                     "counter+7100001":1, 
-                    "counter+7100004":1
+                    "counter+7100004":1,
+                    "no_show":{
+                        "clean.s4":1
+                    }
                 },
                 "action": { 
+                    "loot":6000045  //随机银情报
                 }
             },
             {
@@ -66,7 +70,8 @@
                 "result": 
                 {    
                     "counter+7100003":1, //权势-1
-                    "clean.s3":1
+                    "clean.s3":1,
+                    "clean.s4":1
                 },
                 "action": {
                     "loot":6000045  //随机银情报
@@ -113,6 +118,19 @@
                     "is_empty":1,
                     "is_enemy":0,
                     "text":"一张不高于青铜品级的杀戮卡"
-                }
+                },
+            "s4":
+            {
+                "condition": 
+                {
+                    "type":"char",
+                    "is":2100034
+                },
+                "open_adsorb":1,
+                "is_key":0,
+                "is_empty":0,
+                "is_enemy":0, 
+                "text":"他骂得很脏" 
+            } 
         }
     } 

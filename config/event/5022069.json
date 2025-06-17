@@ -3,7 +3,7 @@
     "text": "王之盛怒",
     "is_replay": 0,
     "auto_start":false,
-    "start_trigger":false,
+    "start_trigger":true,
     "on": { 
         "round_begin_ba":1
     },

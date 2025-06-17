@@ -3,7 +3,7 @@
         "name": "命运档案馆",
         "text": "你可以向命运神庙的苦修士购买任意黄金品级的情报，该仪式每天刷新。",       
         "tips": "",
-        "mapping_id":8000514,
+        "mapping_id":8001045,
         "once_new":1,
         "round_number": 1,
         "waiting_round":0, 
@@ -416,6 +416,33 @@
                 "is_empty":0,
                 "is_enemy":0,
                 "text":"苦修士"
+            },
+            "s9":
+            {
+                "condition":
+                {
+
+                    "type":"char",
+                    "is":2100030
+                },
+                "open_adsorb":1,
+                "is_key":0,
+                "is_empty":0,
+                "is_enemy":0,
+                "text":"苦修院的孩子们"
+            },
+            "s10":
+            {
+                "condition":
+                {
+                    "type":"item",
+                    "is":2100028
+                },
+                "open_adsorb":1,
+                "is_key":0,
+                "is_empty":0,
+                "is_enemy":0,
+                "text":"命运神庙"
             }
         }
     } 

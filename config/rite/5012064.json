@@ -133,6 +133,19 @@
                 "is_empty":1,
                 "is_enemy":0,
                 "text":"如果想折断奢靡卡，就必须拿出8金币"
+            },
+            "s4":
+            {
+                "condition": 
+                {
+                    "type":"char",
+                    "is":2100030
+                },
+                "open_adsorb":1,
+                "is_key":0,
+                "is_empty":0,
+                "is_enemy":0,
+                "text":"饥饿的遗孤"
             }
         }
     } 
